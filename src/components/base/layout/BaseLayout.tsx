@@ -11,7 +11,8 @@ import type { ReactNode } from 'react';
 import Footer from '@/components/base/footer';
 import { DynamicHeader, StaticHeader } from '@/components/base/header';
 
-enum HeaderType {
+// Export the enum so it can be imported in other files
+export enum HeaderType {
   Static = 'static',
   Dynamic = 'dynamic',
 }
