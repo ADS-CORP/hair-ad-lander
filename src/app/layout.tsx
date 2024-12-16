@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import BaseLayout from "@/components/base/layout/BaseLayout";
+import BaseLayout, { HeaderType } from "@/components/base/layout/BaseLayout";
 import { HeaderData, FooterData, NavigationData } from "@/app/data";
 import { GtmId, LandingPageVariants } from "@/app/config";
 
@@ -42,7 +42,7 @@ export default function RootLayout({
         <BaseLayout 
           data={data}
           config={config}
-          headerType="static"
+          headerType={HeaderType.Static}
         >
           {children}
         </BaseLayout>
